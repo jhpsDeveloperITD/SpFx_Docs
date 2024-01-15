@@ -1,4 +1,9 @@
 # Manual de instalación para Spfx
+### Requisitos previos
+
+- *No tener Node Js. instalado en la computadora en caso que ya se tenga instalado desinstalarlo*
+- *Tener instalado Visual Studio Code o  Web Storm *
+- *Contar con privilegios de administrador local (No instalar NVM usando Administrator.acm debe ser con el usuario propio)*
 
 ### Instalación de NVM 
 NVM es un gestor de versiones de Node.js, que nos permite tener varias versiones de Node.js instaladas en nuestro equipo y cambiar entre ellas fácilmente.
@@ -7,12 +12,14 @@ Para instalar NVM, debemos ejecutar el archivo exe de instalación que se encuen
 
 ![img.png](screenshoots/img.png)
 
-Una vez instalado, abrimos una consola de comandos y ejecutamos el siguiente comando para verificar que se instaló correctamente es importante señalar que se debe ejecutar con privilegios de administrador:
+Una vez instalado, abrimos una consola de comandos y ejecutamos el siguiente comando para verificar que se instaló correctamente:
 
 ```sh
 nvm --version
 ```
-![img_2.png](screenshoots/img_2.png)
+![img.png](screenshoots/img_01.png)
+
+Si se instaló correctamente, nos debería mostrar la versión de NVM instalada en caso contrario, debemos verificar si no se instalo en administrador , para comprobarlo en una terminal con privilegio de administrador ejecutamos el mismo comando si responde con la version se instalo en administrador.acm hay que desinstalarlo y volverlo a instalar con el usuario local.
 
 ### Instalación de Node.js
 
@@ -28,7 +35,7 @@ una vez instalado, ejecutamos el siguiente comando para verificar que se instal�
 ```sh
 node --version
 ```
-![img_3.png](screenshoots/img_3.png)
+![img_1.png](screenshoots/img_02.png)
 
 Para verificar las versiones de Node.js instaladas en nuestro equipo, ejecutamos el siguiente comando:
 
@@ -47,7 +54,7 @@ una vez instalado, ejecutamos el siguiente comando para verificar que se instal�
 ```sh
 yo --version
 ```
-![img_4.png](screenshoots/img_4.png)
+![img_2.png](screenshoots/img_03.png)
 
 Nota: Para que Spfx funcione correctamente, es necesario instalar la versión 4.x de Yeoman.
 
@@ -59,7 +66,7 @@ Para instalar Gulp, debemos ejecutar el siguiente comando en la consola de coman
 npm install gulp-cli @microsoft/generator-sharepoint --global
 ```
 
-una vez instalado para generar el proyecto de Spfx primero tenemos que crear una carpeta donde se va a generar el proyecto, luego nos ubicamos en la carpeta que acabamos de crear y ejecutamos el siguiente comando con privilegios de administrador:
+una vez instalado para generar el proyecto de Spfx primero tenemos que crear una carpeta donde se va a generar el proyecto, luego nos ubicamos en la carpeta que acabamos de crear y ejecutamos el siguiente comando:
 
 ```sh
     yo 
